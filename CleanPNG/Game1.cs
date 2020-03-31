@@ -60,7 +60,7 @@ namespace TextureSplitter
                 for (var i = 0; i < data.Length; i++)
                 {
                     var color = data[i];
-                    if (color.A < Threshold)
+                    if (color.A <= Threshold)
                         data[i] = Color.TransparentBlack;
                 }
 
