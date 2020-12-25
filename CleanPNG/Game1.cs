@@ -59,8 +59,7 @@ namespace TextureSplitter
                 textureIn.GetData(data);
                 for (var i = 0; i < data.Length; i++)
                 {
-                    var color = data[i];
-                    if (color.A <= Threshold)
+                    if (data[i].A <= Threshold)
                         data[i] = Color.TransparentBlack;
                 }
 
